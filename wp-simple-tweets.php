@@ -15,7 +15,7 @@ if (!class_exists("\Composer\Autoload\ClassLoader")) {
 
 add_action('wp_dashboard_setup', 'upcloo_add_dashboard_widgets' );
 
-function upcloo_add_dashboard_widgets() A Simple{
+function upcloo_add_dashboard_widgets() {
     wp_add_dashboard_widget('wpcon_dashboard_widget', 'A Simple News Widget', 'wpcon_dashboard_widget_function');
 }
 
