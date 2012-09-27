@@ -1,0 +1,4 @@
+vendor
+*.phar
+*.swp
+cache

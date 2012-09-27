@@ -1,0 +1,12 @@
+<ul>
+    {% for element in elements %}
+    <li>
+        <a href='https://www.twitter.com/{{ element.name }}/status/{{ id_str }}' target='_blank'>{{ element.text }}</a>
+        <ul>
+            <li>
+                <a href='https://www.twitter.com/{{ element.name }}' target='_blank'>@{{ element.user.screen_name }}</a>
+            </li>
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
