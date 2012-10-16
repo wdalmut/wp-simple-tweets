@@ -13,9 +13,9 @@ if (!class_exists("\Composer\Autoload\ClassLoader")) {
     require_once dirname(__FILE__) . '/vendor/autoload.php';
 }
 
-add_action('wp_dashboard_setup', 'upcloo_add_dashboard_widgets' );
+add_action('wp_dashboard_setup', 'wptwig_add_dashboard_widgets' );
 
-function upcloo_add_dashboard_widgets() {
+function wptwig_add_dashboard_widgets() {
     wp_add_dashboard_widget('wpcon_dashboard_widget', 'A Simple News Widget', 'wpcon_dashboard_widget_function');
 }
 
